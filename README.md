@@ -58,3 +58,9 @@ if [[ -n "$SSH_CONNECTION" ]]; then
     source ~/.zshrc
 fi
 ```
+
+## 🤝 Contributing
+
+### Clone the repo
+
+### Submit a pull request
