@@ -1,22 +1,23 @@
 # zsh-aliases-easy-remember
 
-zsh-aliases easy to remember commands for terminals and servers - If you want to help me make bigger the list, you are welcome, just remember that:
+Easy-to-remember Zsh aliases for terminals and servers.  
+This project focuses on **action-based aliases** that are readable, intuitive, and consistent.
 
-1. The commands need to align to an ACTION example is we are going BACK in the folders structure, we find the command:
-```
-alias back="cd .."
-```
-// there are expecions called b and cl = back and clean that are to much often used and easy to remember
+## Motivation
 
-2. Name them in camelCase first letter in lowercase
+Short or cryptic aliases are hard to remember, especially when working across multiple servers.  
+These aliases are named by **what you want to do**, not by the command itself.
 
-Enter into the area of alias (I call them snips = snippets)
-```
+## Quick Start
+
+1. Open your Zsh configuration file:
+```sh
 nano ~/.zshrc
 ```
-Copy paste
+
+2. Copy and paste the aliases:
 ```zsh
-# exceptions
+# exceptions (very common shortcuts)
 alias b="cd .."
 alias cl="clear"
 
@@ -44,23 +45,48 @@ alias currentDirectory="pwd"
 alias where="pwd"
 ```
 
-After paste, save the file and exit editor, run this code to reset the terminal
-```
+3. Reload the configuration:
+```sh
 source ~/.zshrc
 ```
-if you want the terminal load the alias everytime you enter you must load the alias this way: run this command
-```
+
+4. (Optional) Load aliases automatically on SSH:
+```sh
 nano ~/.bash_profile
 ```
-inside paste this command
-```
+
+Paste:
+```sh
 if [[ -n "$SSH_CONNECTION" ]]; then
     source ~/.zshrc
 fi
 ```
 
-## 🤝 Contributing
+## Usage
+
+Aliases are named by **action**, not by command.
+
+Example:
+```sh
+back
+```
+Moves one directory up (`cd ..`).
+
+### Rules
+- Use **camelCase** (first letter lowercase)
+- Alias names must describe an **action**
+- Only two exceptions: `b` (back) and `cl` (clear)
+
+## Contributing
+
+Contributions are welcome 🤝
 
 ### Clone the repo
+```sh
+git clone https://github.com/your-username/zsh-aliases-easy-remember.git
+```
 
 ### Submit a pull request
+- Add action-based aliases
+- Follow naming rules
+- Keep it simple and readable
