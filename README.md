@@ -83,7 +83,7 @@ Contributions are welcome 🤝
 
 ### Clone the repo
 ```sh
-git clone https://github.com/your-username/zsh-aliases-easy-remember.git
+git clone https://github.com/sixteen-core/zsh-aliases-easy-remember.git
 ```
 
 ### Submit a pull request
