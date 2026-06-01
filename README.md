@@ -1,4 +1,4 @@
-# zsh-aliases-easy-remember
+# zsh-aliases-easy-remember linux alias
 
 Easy-to-remember Zsh aliases for terminals and servers.  
 This project focuses on **action-based aliases** that are readable, intuitive, and consistent.
